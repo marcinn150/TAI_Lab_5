@@ -12,7 +12,6 @@ export class FilterPipe implements PipeTransform {
     if (!filterText) {
       return value;
     }
-
     filterText = filterText.toLowerCase();
 
     return value.filter(val => {

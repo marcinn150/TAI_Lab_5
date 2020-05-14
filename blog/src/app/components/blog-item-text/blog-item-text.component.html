@@ -1,4 +1,6 @@
-{{ text | summary:35 }}
-<a [routerLink]="['/blog/detail/', id]">
-  Więcej
+<h4>
+  {{ title }}
+</h4>
+<a [routerLink]="['/blog/detail/',id]">
+  {{ text | summary:35}}
 </a>

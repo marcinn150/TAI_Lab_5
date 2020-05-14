@@ -1,10 +1,9 @@
 import {Directive, ElementRef, HostListener} from '@angular/core';
 
 @Directive({
-  selector: '[appTextFormat]'
+  selector: '[textFormat]'
 })
 export class TextFormatDirective {
-
   constructor(private el: ElementRef) {
   }
 

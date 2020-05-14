@@ -1,20 +1,22 @@
-import {Component, OnInit} from '@angular/core';
-import {DataService} from 'src/app/services/data.service';
+import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {DataService} from '../../services/data.service';
 
 @Component({
-  selector: 'blog-item-details',
+  selector: 'app-blog-item-details',
   templateUrl: './blog-item-details.component.html',
-  styleUrls: ['./blog-item-details.component.css']
+  styleUrls: ['./blog-item-details.component.scss']
 })
 export class BlogItemDetailsComponent implements OnInit {
 
-  public image = '';
-  public text: string;
-  public id: number;
-
   constructor(private dataService: DataService, private route: ActivatedRoute) {
   }
+
+  public title = '';
+  public image = '';
+  public text = '';
+  public id: number;
+
 
   ngOnInit() {
     let id: string;
@@ -26,6 +28,8 @@ export class BlogItemDetailsComponent implements OnInit {
     this.dataService.getById(id).subscribe(res => {
       this.image = res['image'];
       this.text = res['text'];
+      this.title = res['title'];
     });
   }
+
 }

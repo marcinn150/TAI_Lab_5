@@ -1,18 +1,23 @@
-import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
-import {DataService} from 'src/app/services/data.service';
-import {fromEvent} from 'rxjs';
+import {
+  Component,
+  ViewChild,
+  ElementRef,
+  AfterViewInit,
+} from '@angular/core';
 import {debounceTime, distinctUntilChanged, map, switchMap} from 'rxjs/operators';
+import {DataService} from '../../services/data.service';
+import {fromEvent} from 'rxjs';
 
 @Component({
   selector: 'selectize',
   templateUrl: './selectize.component.html',
-  styleUrls: ['./selectize.component.css']
+  styleUrls: ['./selectize.component.scss']
 })
 export class SelectizeComponent implements AfterViewInit {
 
-  @ViewChild('input') input: ElementRef;
-  public posts$;
 
+  @ViewChild('input',{static:false}) input: ElementRef;
+  public posts$;
 
   constructor(private dataService: DataService) {
   }
@@ -28,6 +33,4 @@ export class SelectizeComponent implements AfterViewInit {
       this.posts$ = results;
     });
   }
-
-
 }

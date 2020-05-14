@@ -14,12 +14,13 @@ import {BlogItemDetailsComponent} from './components/blog-item-details/blog-item
 import {HttpClientModule} from '@angular/common/http';
 import {DataService} from './services/data.service';
 import {SummaryPipe} from './pipes/summary.pipe';
-import {SearchBarComponent} from './shared/search-bar/search-bar.component';
+import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 import {FormsModule} from '@angular/forms';
-import {BlogHomeComponent} from './components/blog-home/blog-home.component';
-import {FilterPipe} from './pipes/filter.pipe';
-import {TextFormatDirective} from './directives/text-format.directive';
-import {SelectizeComponent} from './components/selectize/selectize.component';
+import { BlogHomeComponent } from './components/blog-home/blog-home.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { TextFormatDirective } from './directives/text-format.directive';
+import { SelectizeComponent } from './components/selectize/selectize.component';
+import { AddPostComponent } from './components/add-post/add-post.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {SelectizeComponent} from './components/selectize/selectize.component';
     BlogHomeComponent,
     FilterPipe,
     TextFormatDirective,
-    SelectizeComponent
+    SelectizeComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,

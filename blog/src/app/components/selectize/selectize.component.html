@@ -1,9 +1,9 @@
-<input #input class="form-control"
-       placeholder="Wpisz treść..."
-       textFormat
-       type="text" type="search">
+<input #input type="text" placeholder="Wyszukaj post:">
 
 <ul>
-  <li *ngFor="let p of posts$">
-    <a [routerLink]="['/blog/detail/', p.id]" href="#"> {{ p.text }}</a></li>
+  <div [className]="'selector'">
+    <li *ngFor="let p of posts$">
+      <a href="#" [routerLink]="['/blog/detail/', p.id]"> {{ p.text }}</a></li>
+  </div>
+
 </ul>

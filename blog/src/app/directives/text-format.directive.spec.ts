@@ -1,4 +1,4 @@
-import {TextFormatDirective} from './text-format.directive';
+import { TextFormatDirective } from './text-format.directive';
 
 describe('TextFormatDirective', () => {
   it('should create an instance', () => {

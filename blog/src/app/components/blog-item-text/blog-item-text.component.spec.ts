@@ -1,6 +1,6 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {BlogItemTextComponent} from './blog-item-text.component';
+import { BlogItemTextComponent } from './blog-item-text.component';
 
 describe('BlogItemTextComponent', () => {
   let component: BlogItemTextComponent;
@@ -8,9 +8,9 @@ describe('BlogItemTextComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [BlogItemTextComponent]
+      declarations: [ BlogItemTextComponent ]
     })
-      .compileComponents();
+    .compileComponents();
   }));
 
   beforeEach(() => {
