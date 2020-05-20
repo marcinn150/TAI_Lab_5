@@ -1,5 +1,9 @@
-<div [className]="'search'">
-  <input [(ngModel)]="filterText" (ngModelChange)="sendFilter()"
-         placeholder="Podaj id:" type="search" class="form-control" textFormat>
-</div>
-
+<input
+  [(ngModel)]="filterText"
+  (ngModelChange)="sendFilter()"
+  placeholder="Wpisz nazwę..."
+  id="search"
+  type="search"
+  class="form-control"
+  textFormat
+/>

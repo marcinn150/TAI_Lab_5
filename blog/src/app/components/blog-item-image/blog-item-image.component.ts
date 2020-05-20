@@ -8,9 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class BlogItemImageComponent implements OnInit {
   @Input() image: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit() {}
 }
